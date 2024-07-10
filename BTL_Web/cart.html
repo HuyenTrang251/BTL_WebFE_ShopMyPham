@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="fontawesome-free-6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="webMP.css">
+    <script src="jquery-3.7.1.slim.min.js"></script>
+    <script src="webMP.js"></script>
+</head>
+<body>
+    <div id="header-cart">
+        <div class="header-body">
+            <div id="header-top">
+                <div id="header-top-left">
+                    <p>Địa chỉ: Nhân Hòa - Mỹ Hào - Hưng Yên | &#160 &#160 &#160 Điện thoại: 0988886666 |</p>
+                </div>
+                <div id="header-top-right">
+                    <p>Đăng kí | Đăng nhập</p>
+                </div>
+            </div>
+            <div id="header-main">
+                <div id="header-main-logo">
+                    <img src="logo1.png" alt="logoShop" />
+                </div>
+                <div id="header-main-search">
+                    <input id="search__nhap" type="search" placeholder=" Nhập từ khóa tìm kiếm...">
+                    <a href="#" id="search__icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    
+                </div>
+                <div id="header-main-cart">
+                    <a id="cart-icon" href="cart.html" target="_blank">
+                        <i class="fa-solid fa-cart-shopping"><sup>(0)</sup></i>   <span>Giỏ hàng (0)</span></a>
+                </div>
+            </div>
+            <div id="header-menu">
+                <ul>
+                    <li class="menu"><a href="webMP.html">Trang chủ</a> </li>
+                    <li class="menu"> <a href="#">Sản phẩm</a> <i class="fa-solid fa-caret-down"></i>
+                        <ul>
+                            <li><a href="#">Son</a></li>
+                            <li><a href="#">Sữa rửa mặt</a></li>
+                            <li><a href="#">Tẩy trang</a></li>
+                            <li><a href="#">Dưỡng da</a></li>
+                            <li><a href="#">Trang điểm</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"> <a href="#">Bán chạy</a> </li>
+                    <li class="menu"> <a href="#">Sale</a> </li>
+                    <li class="menu"> <a href="#">Thương hiệu</a> <i class="fa-solid fa-caret-down"></i>
+                        <ul>
+                            <li><a href="#">Unilever</a></li>
+                            <li><a href="#">L'Oréal</a></li>
+                            <li><a href="#">La Roche-Posay</a></li>
+                            <li><a href="#">Innisfree</a></li>
+                            <li><a href="#">Hada Labo</a></li>
+                            <li><a href="#">Artistry</a></li>
+                            <li><a href="#">Laneige</a></li>
+                            <li><a href="#">Beiersdorf</a></li>
+                            <li><a href="#">Procter & Gamble</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"> <a href="#">Tin tức</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main-cart">
+        <section id="cart">
+            <form action="">
+                <table id="table-pro">
+                    <tr class="table-title">
+                        <th class="colum" style="width: 300px;">Sản phẩm</th>
+                        <th class="colum">Giá</th>
+                        <th class="colum">SL</th>
+                        <th class="colum">Chọn</th>
+                    </tr>
+                    <tbody id="body">
+                        <tr class="table-content">
+                            <td class="col-content" style="width: 350px;"><div class="cart-product"><img class="pic" src="son1.jpg" atl="son" /><span class="name">Son YSL Rouge Pur Couture 01 Le Rouge - Màu Đỏ Tươi</span></div></td>
+                            <td class="col-content"><span class="price">470.000<sup>₫</sup></span></td>
+                            <td class="col-content"><input class="quantity" type="number" value="1" min="1"></td>
+                            <td class="col-content"><div class="delete"><p>Xóa</p>     <i class="fa-solid fa-trash"></i></div></td>
+                        </tr>
+                        <tr class="table-content">
+                            <td class="col-content" style="width: 350px;"><div class="cart-product"><img class="pic" src="son1.jpg" atl="son" /><span class="name">Son YSL Rouge Pur Couture 01 Le Rouge - Màu Đỏ Tươi</span></div></td>
+                            <td class="col-content"><span class="price">470.000</span><sup>₫</sup></td>
+                            <td class="col-content"><input class="quantity" type="number" value="1" min="1"></td>
+                            <td class="col-content"><div class="delete"><p>Xóa</p><i class="fa-solid fa-trash"></i></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="cart-total">
+                    <h3>TỔNG TIỀN: <span><b>470.000</b><sup>₫</sup></span></h3>
+                    <input type="button" value="Thanh toán">
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="webMP.js"></script>
+    <script>
+        $(document).ready(function(){
+            var data = localStorage.getItem("orderDetails");
+            data = JSON.parse(data);
+            $("#cart-icon").find("span").text("Giỏ hàng ("+ data.length +")");
+            $("#cart-icon").find("i").find("sup").text("("+ data.length +")");
+            var content = "";
+            for(i=0; i<data.length; i++){
+                var item = `<tr class="table-content">
+                            <td class="col-content"><div class="cart-product"><img class="pic" src='${data[i].photo}' /><span class="name">${data[i].name}</span></div></td>
+                            <td class="col-content"><span class="price"><b>${data[i].price}</b><sup>₫</sup></span></td>
+                            <td class="col-content"><input class="quantity" type="number" value="1" min="1"></td>
+                            <td class="col-content"><div class="delete"><p>Xóa</p>     <i class="fa-solid fa-trash"></i></div></td>
+                        </tr>`
+                content += item;
+            }
+            $("#body").html(content);
+            cartTotal()
+            deleteCart()
+            // $("#control").click(function(){
+            //     $("#container").slideToggle();
+            // });
+        });
+    </script>
+</body>
+</html>

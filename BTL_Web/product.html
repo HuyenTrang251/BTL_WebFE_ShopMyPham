@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="webMP.js"></script>
+    <script src="jquery-3.7.1.slim.min.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div id="header-menu">
+            <ul>
+                <li class="menu"><a href="webMP.html">Trang chủ</a> </li>
+                <li class="menu"> <a href="#">Sản phẩm</a> <i class="fa-solid fa-caret-down"></i>
+                    <ul>
+                        <li><a href="#">Son</a></li>
+                        <li><a href="#">Sữa rửa mặt</a></li>
+                        <li><a href="#">Tẩy trang</a></li>
+                        <li><a href="#">Dưỡng da</a></li>
+                        <li><a href="#">Trang điểm</a></li>
+                    </ul>
+                </li>
+                <li class="menu"> <a href="#">Bán chạy</a> </li>
+                <li class="menu"> <a href="#">Sale</a> </li>
+                <li class="menu"> <a href="#">Thương hiệu</a> <i class="fa-solid fa-caret-down"></i>
+                    <ul>
+                        <li><a href="#">Unilever</a></li>
+                        <li><a href="#">L'Oréal</a></li>
+                        <li><a href="#">La Roche-Posay</a></li>
+                        <li><a href="#">Innisfree</a></li>
+                        <li><a href="#">Hada Labo</a></li>
+                        <li><a href="#">Artistry</a></li>
+                        <li><a href="#">Laneige</a></li>
+                        <li><a href="#">Beiersdorf</a></li>
+                        <li><a href="#">Procter & Gamble</a></li>
+                    </ul>
+                </li>
+                <li class="menu"> <a href="#">Tin tức</a> </li>
+            </ul>
+        </div>
+   </div>
+   <div id="main-product">
+    <div id="product-details">
+        <div id="top">
+            <div id="pro-picBig">
+                <img src="son1.jpg" />
+            </div>
+            <div id="pro-information">
+                <h2>Son YSL Rouge Pur Couture 01 Le Rouge - Màu Đỏ Tươi</h2>
+                <span>Giá: </span><span style = "color: red"><b>890.000</b><sup>₫</sup></span>   <del>1.100.000<sup>₫</sup></del></span>
+                <div class="pro-description">
+                    <p><b>Son YSL Rouge Pur Couture 01 Le Rouge - Màu Đỏ Tươi</b> “đốn tim” phái nữ với tông màu trendy, ngập tràn cuốn hút chắc chắn sẽ khiến nàng bị thu hút ngay từ ánh nhìn đầu tiên. Sắc đỏ tươi như một  điểm nhấn làm thăng hạng nhan sắc giúp nàng quyến rũ hơn, nổi bật hơn và tinh tế hơn.</p>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="pro-picSmall">
+                <img id="pic1" src="son1.jpg" onclick="picChange('pic1')"/>
+                <img id="pic2" src="son1.3.png" onclick="picChange('pic2')"/>
+                <img id="pic3" src="son1.4.png" onclick="picChange('pic3')"/>
+                <img id="pic4" src="son1.5.jpg" onclick="picChange('pic4')"/>
+            </div>
+            <div id="pro-buy">
+                <div id="number">
+                    <p>Số lượng</p>
+                    <input type="button" onclick="reduce('txtAmount')" value="-" />
+                    <input id="txtAmount" type="text" value="1" style="width: 50px; text-align: center" />
+                    <input type="button" onclick="increase('txtAmount')" value="+" />
+                </div>
+                <div id="buy">
+                    <input type="button" value="MUA NGAY" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="product-description">
+        <hr class="line">
+        <h3 class="des-title">THÔNG TIN SẢN PHẨM</h3>
+        <div id="des-details">
+            <ul>
+                <li><b>Xuất xứ: </b>Pháp</li>
+                <li><b>Thương hiệu: </b>YSL</li>
+                <li><b>Màu sắc: </b>Đỏ Tươi</li>
+            </ul>
+        </div>
+        <hr class="line">
+        <h3 class="des-title">MÔ TẢ</h3>
+        <div class="des-info">
+            <p>Được gọi tên như “nàng hậu” của BST Rouge Pur Couture Satin Radiance Lipstick, Son YSL Rouge Pur Couture 01 Le Rouge - Màu Đỏ Tươi khiến hội con gái “mê đắm”. Sắc đỏ tươi thời thượng, ngập tràn cuốn hút. Nếu đang tìm kiếm một sắc đỏ tươi cổ điển thì chắc hẳn YSL màu 01 sẽ là gợi ý cực hấp dẫn cho nàng.</p>
+            <div class="pic">
+                <img src="son1.jpg" alt="anh1" />
+                <p class="page">Son YSL Rouge Pur Couture 01 Le Rouge - Màu Đỏ Tươi khiến hội con gái “mê đắm”.</p>
+            </div>
+        </div>
+        <div class="des-info">
+            <p><b>Sắc son đỏ tươi kiêu sa, diễm lệ</b><br/><br/>
+                Màu son đỏ tươi hiện đại giúp nàng biến hóa tức thì với mọi phong cách trang điểm. Son YSL màu 01 được hội con gái ca ngợi hết lời bởi sắc độ trẻ trung, cực kỳ rạng rỡ khi diện lên môi.</p> 
+            <div class="pic">
+                <img src="son1.3.png" alt="anh2" />
+                <p class="page">Màu son đỏ tươi hiện đại giúp nàng biến hóa tức thì với mọi phong cách trang điểm.</p>
+            </div>
+        </div>
+
+        <div class="des-info">
+            <p>YSL 01 siều dễ đánh và phù hợp với nhiều makeup look khác biệt. Nếu đang tìm kiếm một sắc son đỏ tươi cổ điển thì chắc hẳn YSL màu 01 sẽ là gợi ý cực hấp dẫn cho nàng. <br/><br/>
+                Đặc biệt hơn, Son YSL Rouge Pur Couture 01 lên môi chuẩn màu nên dù bạn sở hữu sắc môi đậm nét cũng không hê là trở ngại khi món “bảo bối” này. Phù phép gương mặt chi với một lần quệt duy nhất, YSL 01 được phái nữ ưu ái với danh hiệu “son quốc dân” từ thương hiệu làm đẹp xứ mộng mơ.</p>
+            <div class="pic">
+                <img src="son1.5.jpg" alt="anh3" />
+                <p class="page">Đặc biệt hơn, son YSL 01 lên môi chuẩn màu nên dù bạn sở hữu sắc môi đậm nét cũng không hê là trở ngại khi món “bảo bối” này</p>
+            </div>
+        </div>
+
+        <div class="des-info">
+            <p><b>Thiết kế sang trọng, đẳng cấp với màu vàng gold lấp lánh</b><br/><br/>
+                Lựa chọn sắc vàng kim làm tông màu chủ đạo, những cây son YSL 01 mang dấu ấn của thứ phụ kiện xa hoa đây lộng lẫy gửi tặng đến phái nữ.</p>
+            <div class="pic">
+                <img src="son1.7.png" alt="anh4" />
+                <p class="page">Lựa chọn sắc vàng kim làm tông màu chủ đạo, những cây son YSL Rouge Pur Couture mang dấu ấn của thứ phụ kiện xa hoa đây lộng lẫy</p>
+            </div>
+        </div>
+
+        <div class="des-info">
+            <p>Thiết kế vuông vắn, gọn nhẹ với logo YSL khắc nổi dường như đã trở thành thương hiệu của những cây son YSL màu 01. Ở cây son môi này, bạn sẽ cảm nhận được nét cổ điển, sang trọng cùng tính ứng dụng cao như hòa trộn làm một. Son YSL Rouge Pur Couture 01 siêu nhỏ gọn và tiện lợi khi mang theo bên mình.</p>
+            <div class="pic">
+                <img src="son1.6.jpg" alt="anh5" />
+                <p class="page">Son YSL Rouge Pur Couture 01 siêu nhỏ gọn và tiện lợi khi mang theo bên mình.</p>
+            </div>
+        </div>
+        <div id="product-same">
+            <hr class="line">
+            <h3 class="des-title">SẢN PHẨM TƯƠNG TỰ</h3>
+            <div class="product-top">
+                <div class="product-item">
+                    <img src="son1.jpg" alt="">
+                    <div class="pro-name"><span class="product-name">Son YSL Rouge Pur Couture 01 Le Rouge - Màu Đỏ Tươi</span></div>
+                    <span class="product-price"><b>890.000</b><sup>₫</sup></span>   <del>1.100.000<sup>₫</sup></del>
+                    <input type="button" class="buy" value="Chọn mua"/>
+                </div>
+                
+                <div class="product-item">
+                    <img src="son2.jpg" alt="">
+                    <div class="pro-name"><span class="product-name">Son Chanel Rouge Coco Flash Hydrating Vibrant Shine Lip Colour 66 Pulse - Màu Đỏ Cam</span></div>
+                    <span class="product-price"><b>1.050.000</b><sup>₫</sup></span>   <del>1.300.000<sup>₫</sup></del>
+                    <input type="button" class="buy" value="Chọn mua"/>
+                </div>
+            
+                <div class="product-item">
+                    <img src="son3.jpg" alt="">
+                    <div class="pro-name"><span class="product-name">Son Dior Rouge Forever Transfer Proof Lipstick 999 Forever Dior (New) - Màu Đỏ Tươi</span></div>
+                    <span class="product-price"><b>950.000</b><sup>₫</sup></span>   <del>1.200.000<sup>₫</sup></del>
+                    <input type="button" class="buy" value="Chọn mua"/>
+                </div>
+            
+                <div class="product-item hide">
+                    <img src="son4.jpg" alt="">
+                    <div class="pro-name"><span class="product-name">Son Christian Louboutin Màu 001M Rouge Louboutin - Đỏ Thuần Đậm</span></div>
+                    <span class="product-price"><b>2.750.000</b><sup>₫</sup></span>   <del>3.250.000<sup>₫</sup></del>
+                    <input type="button" class="buy" value="Chọn mua"/>
+                </div>
+            </div>
+        </div>
+        <div id="main-bottom">
+            <div class="main-bottom-sub">
+                <img src="freevc.png" alt="free vận chuyển" />
+                <div class="info-service"><h3>MIỄN PHÍ VẬN CHUYỂN</h3><span>Đơn hàng trên 500.000<sup>₫</sup></span></div>
+            </div>
+            <div class="main-bottom-sub">
+                <img src="tichdiem.png" alt="tích điểm" />
+                <div class="info-service"><h3>TÍCH ĐIỂM</h3><span>Điểm thưởng giảm 5-10%</span></div>
+            </div>
+            <div class="main-bottom-sub">
+                <img src="camket.png" alt="chính hãng" />
+                <div class="info-service"><h3>CAM KẾT CHÍNH HÃNG</h3><span>Mỹ phẩm chính hãng 100%</span></div>
+            </div>
+            <div class="main-bottom-sub">
+                <img src="antoan.png" alt="an toàn" />
+                <div class="info-service"><h3>GIAO DỊCH AN TOÀN</h3><span>Mọi giao dịch được bảo mật</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-product">
+        <div id="footer-sub">
+            <div class="footer-sub-inf">
+                <img src="logo1.png" alt="logo" /><br/>
+                <b>Địa chỉ:</b>&#160&#160&#160<span>Chợ Dầm - Nhân Hòa - Mỹ Hào - Hưng Yên</span><br/>
+                <b>Điện thoại:</b><span>0988886666</span>
+            </div>
+            <div class="footer-sub-info">
+                <h2>HỖ TRỢ KHÁCH HÀNG</h2>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    <li><a href="#">Giao nhận và thanh toán</a></li>
+                    <li><a href="#">Đăng kí tài khoản</a></li>
+                </ul>
+            </div>
+            <div class="footer-sub-info">
+                <h2>CHÍNH SÁCH MUA HÀNG</h2>
+                <ul>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="ip">
+            <b>Địa chỉ:</b>&#160 &#160&#160<span>Chợ Dầm - Nhân Hòa - Mỹ Hào - Hưng Yên</span><br/>
+            <b>Điện thoại:</b><span>0988886666</span>
+        </div>
+        <div id="footer-map">
+            <h2>VỊ TRÍ SHOP TRANG ANH COSMETICS</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14904.847493994637!2d106.05917929908057!3d20.944004940944062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a39c947988e7%3A0x252871cbf30cbfd2!2zQ2jhu6MgROG6p20!5e0!3m2!1svi!2s!4v1718380468835!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+</html>

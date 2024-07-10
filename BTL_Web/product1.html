@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="webMP.js"></script>
+    <script src="jquery-3.7.1.slim.min.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div id="header-menu">
+            <ul>
+                <li class="menu"><a href="webMP.html">Trang chủ</a> </li>
+                <li class="menu"> <a href="#">Sản phẩm</a> <i class="fa-solid fa-caret-down"></i>
+                    <ul>
+                        <li><a href="#">Son</a></li>
+                        <li><a href="#">Sữa rửa mặt</a></li>
+                        <li><a href="#">Tẩy trang</a></li>
+                        <li><a href="#">Dưỡng da</a></li>
+                        <li><a href="#">Trang điểm</a></li>
+                    </ul>
+                </li>
+                <li class="menu"> <a href="#">Bán chạy</a> </li>
+                <li class="menu"> <a href="#">Sale</a> </li>
+                <li class="menu"> <a href="#">Thương hiệu</a> <i class="fa-solid fa-caret-down"></i>
+                    <ul>
+                        <li><a href="#">Unilever</a></li>
+                        <li><a href="#">L'Oréal</a></li>
+                        <li><a href="#">La Roche-Posay</a></li>
+                        <li><a href="#">Innisfree</a></li>
+                        <li><a href="#">Hada Labo</a></li>
+                        <li><a href="#">Artistry</a></li>
+                        <li><a href="#">Laneige</a></li>
+                        <li><a href="#">Beiersdorf</a></li>
+                        <li><a href="#">Procter & Gamble</a></li>
+                    </ul>
+                </li>
+                <li class="menu"> <a href="#">Tin tức</a> </li>
+            </ul>
+        </div>
+   </div>
+   <div id="main-product">
+    <div id="product-details">
+        <div id="top">
+            <div id="pro-picBig">
+                <img src="the1.png" />
+            </div>
+            <div id="pro-information">
+                <h2>Sữa Tắm Trắng Da Hoa Hồng Damask Weilaiya Grand Rose Extracts Whitening Shower Gel</h2>
+                <span>Giá: </span><span style = "color: red"><b>430.000</b><sup>₫</sup></span>   <del>590.000<sup>₫</sup></del></span>
+                <div class="pro-description">
+                    <p><b>Sữa Tắm Trắng Da Hoa Hồng Damask Weilaiya Grand Rose Extracts Whitening Shower Gel</b> là chai sữa tắm sử dụng công nghệ cánh hoa hồng Damask độc quyền được cấp bằng sáng chế cùng với sự kết hợp của nhiều thành phần tự nhiên lành tính. Nhờ đó, chai sữa tắm được nhiều chị em tin tưởng sử dụng hằng ngày để dưỡng ẩm và chăm sóc da trắng hồng tự nhiên.</p>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="pro-picSmall">
+                <img id="pic1" src="the1.png" onclick="picChange('pic1')"/>
+                <img id="pic2" src="the1.1.png" onclick="picChange('pic2')"/>
+                <img id="pic3" src="the1.4.png" onclick="picChange('pic3')"/>
+                <img id="pic4" src="the1.8.png" onclick="picChange('pic4')"/>
+            </div>
+            <div id="pro-buy">
+                <div id="number">
+                    <p>Số lượng</p>
+                    <input type="button" onclick="reduce('txtAmount')" value="-" />
+                    <input id="txtAmount" type="text" value="1" style="width: 50px; text-align: center" />
+                    <input type="button" onclick="increase('txtAmount')" value="+" />
+                </div>
+                <div id="buy">
+                    <input type="button" value="MUA NGAY" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="product-description">
+        <hr class="line">
+        <h3 class="des-title">THÔNG TIN SẢN PHẨM</h3>
+        <div id="des-details">
+            <ul>
+                <li><b>Xuất xứ: </b>Bulgaria</li>
+                <li><b>Thương hiệu: </b>Weilaiya</li>
+                <li><b>Dung tích: </b>450ml</li>
+            </ul>
+        </div>
+        <hr class="line">
+        <h3 class="des-title">MÔ TẢ</h3>
+        <div id="video">
+            <iframe width="728" height="410" src="https://www.youtube.com/embed/xDk9WFBJOlk" title="CẬN CẢNH DÂY CHUYỀN SẢN XUẤT SIÊU PHẨM SỮA TẮM CÁNH HOA HỒNG DAMASK WEILAIYA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="des-info">
+            <p><b>Sữa Tắm Trắng Da Hoa Hồng Damask Weilaiya Grand Rose Extracts Whitening Shower Gel</b> là chai sữa tắm đến từ thương hiệu Weilaiya được nhiều chị em tin tưởng sử dụng trong việc làm sạch và chăm sóc da hằng ngày.</p>
+            <div class="pic">
+                <img src="the1.png" alt="anh1" />
+                <p class="page">Sữa Tắm Trắng Da Damask Weilaiya Grand Rose Extracts Whitening Shower Gel là chai sữa tắm đến từ thương hiệu Weilaiya nổi tiếng.</p>
+            </div>
+        </div>
+        <div class="des-info">
+            <p><b>Điểm nổi bật của Sữa Tắm Trắng Da Hoa Hồng Damask Weilaiya</b><br/><br/></p> 
+            <ul>
+                <li>Thiết kế vỏ chai sữa tắm sang trọng, độc đáo và ấn tượng, tạo điểm nhấn trong không gian phòng tắm của bạn.</li>
+                <li>Sử dụng công nghệ độc quyền để bảo quản cánh hoa hồng tươi Damask từ Bulgaria, giữ cho hương thơm và đặc tính dưỡng chất của hoa được giữ nguyên trong sản phẩm.</li>
+                <li>Hương thơm quyến rũ đầy cảm xúc, tựa nước hoa Elie Saab danh tiếng, mang đến trải nghiệm tắm gội thư giãn và lãng mạn.</li>
+                <li>Thẩm thấu sâu vào làn da, bổ sung độ ẩm cho da, giúp da trở nên căng mướt và mịn màng hơn.</li>
+                <li>Kích thích sản sinh collagen, giúp da trắng hồng tự nhiên và rạng rỡ hơn.</li>
+                <li>Mang lại cảm giác da sạch thoáng vô cùng thoải mái sau mỗi lần sử dụng.</li>
+                <li>Damask Weilaiya Grand Rose Extracts Whitening Shower Gel phù hợp cho mọi loại da, kể cả da nhạy cảm, đảm bảo an toàn và hiệu quả trong quá trình sử dụng.</li>
+            </ul>
+            <div class="pic">
+                <img src="the1.2.png" alt="anh2" />
+                <p class="page">Điểm nổi bật của Sữa Tắm Trắng Da Hoa Hồng Damask Weilaiya.</p>
+            </div>
+        </div>
+
+        <div class="des-info">
+            <p><b>Sữa Tắm Trắng Da Hoa Hồng Damask Weilaiya Grand Rose Extracts Whitening Shower Gel</b> với những chiết xuất an toàn, lành tính, không chứa các loại hóa chất có hại và phù hợp với mọi loại da, đặc biệt là da khô với những thành phần như:</p>
+            <ul>
+                <li>Chiết xuất cánh hoa hồng Damask: Thành phần này giúp điều tiết cân bằng lượng nước và dầu trên da, đồng thời cung cấp dưỡng ẩm và làm đẹp da, giúp da trở nên mềm mại và tươi trẻ.</li>
+                <li>Axit amin hoạt động bề mặt: giúp làm sạch nhẹ nhàng, bảo vệ màng chắn của da, điều tiết pH da và cân bằng lượng dầu và nước, giúp da trở nên sạch sẽ mà không gây khô căng.</li>
+                <li>Tinh chất rau má: có tác dụng kháng viêm và dịu nhẹ, giúp giảm mẫn cảm và dị ứng trên da. Ngoài ra, nó cũng có khả năng chống oxy hóa, giúp bảo vệ da khỏi tác động của các gốc tự do và tác nhân gây hại từ môi trường.</li>
+            </ul>
+            <div class="pic">
+                <img src="the1.3.png" alt="anh3" />
+                <p class="page">Chiết xuất cánh hoa hồng Damask độc quyền giúp điều tiết cân bằng lượng nước và dầu trên da, đồng thời cung cấp dưỡng ẩm và làm đẹp da.</p>
+            </div>
+        </div>
+
+        <div class="des-info">
+            <p><b>Dưỡng da trắng hồng, mềm mịn </b><br/><br/>
+                Công thức dưỡng da trắng hồng, mềm mại của sữa tắm cánh hoa Weilaiya là sự kết hợp tinh tế giữa tinh dầu hoa hồng Damask và các thành phần tự nhiên khác như axit amin, tinh chất rau má và Sodium Hyaluronate. Đây là sản phẩm không chỉ giúp da mịn màng, căng mọng mà còn có các công dụng quan trọng sau:</p>
+                <ul>
+                    <li>Dưỡng ẩm sâu: Tinh chất axit amin và Sodium Hyaluronate thẩm thấu vào sâu trong làn da, cung cấp độ ẩm cần thiết từ bên trong, giữ cho da luôn mềm mại và căng tràn sức sống.</li>
+                    <li>Làm sạch nhẹ nhàng: Sữa tắm cánh hoa Weilaiya không chỉ dưỡng ẩm mà còn giúp làm sạch da nhẹ nhàng, loại bỏ bụi bẩn, bã nhờn mà không làm khô da.</li>
+                    <li>Chống oxy hóa, bảo vệ màng chắn của da: Tinh dầu hoa hồng Damask có khả năng chống lại tác động của các gốc tự do, giúp bảo vệ làn da khỏi sự lão hóa sớm và tác động của môi trường bên ngoài.</li>
+                    <li>Cân bằng độ pH trên da, giúp da ẩm mượt: Công thức đặc biệt này cũng giúp cân bằng độ pH trên da, giúp da trở nên mềm mại, mịn màng và đầy đặn.</li>
+                </ul>
+            <div class="pic">
+                <img src="the1.5.png" alt="anh4" />
+                <p class="page">Sữa Tắm Hoa Hồng Damask Weilaiya giúp dưỡng da trắng hồng, mềm mịn.</p>
+            </div>
+        </div>
+
+        <div class="des-info">
+            <p><b>Tầng hương chính:</b></p>
+            <ul>
+                <li>Hương đầu: Lý chua đen, quả lê, quýt hồng, quả cam.</li>
+                <li>Hương giữa: Hoa hồng, hoa cam, hoa mẫu đơn, hoa hoàng lan, hoa linh lan.</li>
+                <li>Hương cuối: Hoắc hương, hổ phách, maltol, xạ hương.</li>
+            </ul>
+            <div class="pic">
+                <img src="the1.6.png" alt="anh5" />
+                <p class="page">Tầng hương chính của Sữa Tắm Trắng Da Hoa Hồng Damask Weilaiya Grand Rose Extracts Whitening Shower Gel.</p>
+            </div>
+        </div>
+        <div class="des-info">
+            <p><b>Hướng dẫn sử dụng Sữa Tắm Trắng Da Hoa Hồng Damask Weilaiya</b>
+                Cách sử dụng Sữa Tắm Trắng Da Hoa Hồng Damask Weilaiya cũng tương tự như những loại sữa tắm khác và vô cùng đơn giản như dưới đây:</p>
+            <ul>
+                <li>Lấy một lượng sữa tắm phù hợp cho vào lòng bàn tay hoặc bông tắm, nhẹ nhàng xoa đều để tạo bọt.</li>
+                <li>Dùng bọt sữa tắm thoa đều khắp cơ thể.</li>
+                <li>Nhẹ nhàng massage sau đó tắm sạch lại với nước.</li>
+            </ul>
+            <div class="pic">
+                <img src="the1.7.png" alt="anh5" />
+                <p class="page">Cách sử dụng Sữa Tắm Trắng Da Hoa Hồng Damask Weilaiya cũng tương tự như những loại sữa tắm khác và vô cùng đơn giản.</p>
+            </div>
+        </div>
+        <p style="font-size: 20px; line-height: 25px;">Hiện nay Sữa Tắm Damask Weilaiya Grand Rose Extracts Whitening Shower Gel hỗ trợ căng bóng da đã có mặt và được bày bán tại cửa hàng và trên website <a href="webMP.html">TrangAnhShop</a>. Nhanh tay đặt hàng thôi!</p>
+        <div id="product-same">
+            <hr class="line">
+            <h3 class="des-title">SẢN PHẨM TƯƠNG TỰ</h3>
+            <div class="product-top">
+                <div class="product-item">
+                    <img src="the1.png" alt="">
+                    <div class="pro-name"><span class="product-name">Sữa Tắm Trắng Da Hoa Hồng Damask Weilaiya Grand Rose Extracts Whitening Shower Gel</span></div>
+                    <span class="product-price"><b>430.000</b><sup>₫</sup></span>   <del>590.000<sup>₫</sup></del>
+                    <input type="button" class="buy" value="Chọn mua"/>
+                </div>
+                
+                <div class="product-item">
+                    <img src="the2.jpg" alt="">
+                    <div class="pro-name"><span class="product-name">Sữa dưỡng thể thảo dược kháng viêm, kiểm soát mụn, viêm lỗ chân lông AC pure Queenie 250ml</span></div>
+                    <span class="product-price"><b>273.000</b><sup>₫</sup></span>   <del>390.000<sup>₫</sup></del>
+                    <input type="button" class="buy" value="Chọn mua"/>
+                </div>
+            
+                <div class="product-item">
+                    <img src="the3.jpg" alt="">
+                    <div class="pro-name"><span class="product-name">Kem dưỡng trắng da, bổ sung Collagen Queenie</span></div>
+                    <span class="product-price"><b>240.000</b><sup>₫</sup></span>   <del>399.000<sup>₫</sup></del>
+                    <input type="button" class="buy" value="Chọn mua"/>
+                </div>
+            
+                <div class="product-item hide">
+                    <img src="the4.jpg" alt="">
+                    <div class="pro-name"><span class="product-name">WHITENING BODY LOTION - SỮA DƯỠNG THỂ TRẮNG DA REBORN ( BAN ĐÊM )</span></div>
+                    <span class="product-price"><b>620.000</b><sup>₫</sup></span>   <del>780.000<sup>₫</sup></del>
+                    <input type="button" class="buy" value="Chọn mua"/>
+                </div>
+            </div>
+        </div>
+        <div id="main-bottom">
+            <div class="main-bottom-sub">
+                <img src="freevc.png" alt="free vận chuyển" />
+                <div class="info-service"><h3>MIỄN PHÍ VẬN CHUYỂN</h3><span>Đơn hàng trên 500.000<sup>₫</sup></span></div>
+            </div>
+            <div class="main-bottom-sub">
+                <img src="tichdiem.png" alt="tích điểm" />
+                <div class="info-service"><h3>TÍCH ĐIỂM</h3><span>Điểm thưởng giảm 5-10%</span></div>
+            </div>
+            <div class="main-bottom-sub">
+                <img src="camket.png" alt="chính hãng" />
+                <div class="info-service"><h3>CAM KẾT CHÍNH HÃNG</h3><span>Mỹ phẩm chính hãng 100%</span></div>
+            </div>
+            <div class="main-bottom-sub">
+                <img src="antoan.png" alt="an toàn" />
+                <div class="info-service"><h3>GIAO DỊCH AN TOÀN</h3><span>Mọi giao dịch được bảo mật</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-product">
+        <div id="footer-sub">
+            <div class="footer-sub-inf">
+                <img src="logo1.png" alt="logo" /><br/>
+                <b>Địa chỉ:</b>&#160&#160&#160<span>Chợ Dầm - Nhân Hòa - Mỹ Hào - Hưng Yên</span><br/>
+                <b>Điện thoại:</b><span>0988886666</span>
+            </div>
+            <div class="footer-sub-info">
+                <h2>HỖ TRỢ KHÁCH HÀNG</h2>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    <li><a href="#">Giao nhận và thanh toán</a></li>
+                    <li><a href="#">Đăng kí tài khoản</a></li>
+                </ul>
+            </div>
+            <div class="footer-sub-info">
+                <h2>CHÍNH SÁCH MUA HÀNG</h2>
+                <ul>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="ip">
+            <b>Địa chỉ:</b>&#160 &#160&#160<span>Chợ Dầm - Nhân Hòa - Mỹ Hào - Hưng Yên</span><br/>
+            <b>Điện thoại:</b><span>0988886666</span>
+        </div>
+        <div id="footer-map">
+            <h2>VỊ TRÍ SHOP TRANG ANH COSMETICS</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14904.847493994637!2d106.05917929908057!3d20.944004940944062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a39c947988e7%3A0x252871cbf30cbfd2!2zQ2jhu6MgROG6p20!5e0!3m2!1svi!2s!4v1718380468835!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+</html>

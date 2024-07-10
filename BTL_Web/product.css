@@ -1,0 +1,379 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 40px;
+    padding: 0;
+    color: #0e0e0e;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+#header-menu{
+    width: 100%; 
+    height: 50px; 
+    position: fixed;
+    top: 0px;
+    background-color: rgb(249, 123, 144);
+}
+#header-menu ul{
+    margin: 0px;
+    list-style: none;
+    padding-left: 80px; 
+}
+.menu{
+    float: left; 
+    padding-right: 120px;
+    padding-left: 0px;
+    line-height: 50px;
+}
+.menu a{
+    color: #0c0c0c; 
+    text-decoration: none;
+    font-size: 17px;
+    padding-left: 20px;
+}
+.menu:hover{
+    background-color: rgb(240, 109, 124);
+}
+
+ul > li > ul {
+	display: none;
+	padding: 0px;
+    margin: 0px;
+}
+ul > li {
+	position: relative;
+}
+ul > li:hover > ul{
+	display: block;
+	background-color: #fffefe;
+	border: 1px solid #DDD;
+	position: absolute;
+	top: 40px;
+	width: 235px;
+	margin-left: 0px;
+	list-style: none;
+	padding: 0px;
+
+}
+ul li ul li a{
+	text-decoration: none;
+	display: block;
+	line-height: 40px;
+}
+ul li ul li a:hover{
+	background-color: rgb(249, 123, 144);
+	color: #121212;
+}
+#main-product{
+    width: 100%;
+}
+#product-details{
+    width: 80%;
+    margin: 30px auto;
+}
+
+#top{
+    width: 100%;
+    height: 430px;
+    display: flex;
+    line-height: 30px;
+    margin: 5px auto;
+}
+#pro-picBig{
+    width: 39%;
+    height: 95%;
+    margin-top: 20px;
+    border: 1px solid #f5f0f0;
+    border-radius: 10px;
+}
+#pro-picBig img{
+    width: 95%;
+    height: 100%;
+    padding: 10px;
+}
+#pro-information{
+    width: 50%;
+    margin-left: 50px ;
+    padding-top: 35px;
+}
+#pro-information h2{
+    font-size: 25px;
+}
+#pro-information span{
+    font-size:  20px;
+}
+.pro-description{
+    font-size: 20px;
+}
+#bottom{
+    width: 100%;
+    height: 120px;
+    display: flex;
+}
+#pro-picSmall{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    /* overflow-x: scroll; */
+}
+#pro-picSmall img{
+    width: 30%;
+    height: 90%;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #2c2b2b;
+    border-radius: 10px;
+}
+#pro-picSmall img:hover{
+    cursor: pointer;
+}
+#pro-buy{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+#number{
+    width: 40%;
+    height: 80%;
+    margin-left: 45px;
+    padding-top: 5px;
+    font-size: 25px;
+}
+#number p{
+    color: #838181;
+    margin-top: 0px;
+    font-size: 25px;
+}
+#number input{
+    font-size: 25px;
+    line-height: 20px;
+}
+#buy{
+    width: 70%;
+    height: 40%;
+    margin-left: 120px;
+    margin-top: 40px;
+}
+#buy input{
+    width: 70%;
+    height: 90%;
+    font-size: 20px;
+    background-color: rgb(249, 123, 144);
+    color: white;
+    border-radius: 10px;
+    float: right;
+}
+#product-description{
+    width: 90%;
+    margin: 20px auto;
+}
+.line{
+    width: 90%;
+    height: 3px;
+    background-color: rgb(249, 123, 144);
+    margin-bottom: 0px;
+    margin-left: 70px;
+}
+.des-title{
+    width: 300px;
+    height: 40px;
+    margin-left: 70px;
+    background-color: rgb(249, 123, 144);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+    margin-top: -1px;
+}
+#des-details{
+    width: 80%;
+    height: 130px;
+    margin: 10px 120px;
+}
+#des-details li{
+    font-size: 20px;
+    line-height: 40px;
+}
+#video{
+    width: 90%;
+    margin-left: 370px;
+    margin-top: 0px;
+}
+.des-info{
+    width: 85%;
+    margin: 30px auto;
+}
+.des-info p{
+    font-size: 20px;
+    line-height: 25px;
+}
+.des-info ul{
+    padding-left: 20px;
+}
+.des-info li{
+    font-size: 18px;
+    line-height: 30px;
+}
+.pic{
+    width: 45%;
+    height: 550px;
+    margin: 20px auto;
+    border: 1px solid #f5f0f0;
+}
+.pic img{
+    width: 100%;
+    height: 450px;
+}
+.page{
+    width: 100%;
+    height: 80px;
+    font-size: 15px;
+    margin-top: 0px;
+    padding: 0px 30px;
+    background-color: #f1ecec;
+}
+
+.product-top{
+    width: 90%;
+    height: 48%;
+    display: flex;
+    margin: 10px auto;
+}
+.product-item{
+    width: 25%;
+    height: 450px;
+    text-align: center;
+    margin: 5px 9px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 3px 3px;
+}
+
+.product-item img{
+    width: 100%;
+    height: 55%;
+    margin-bottom: 10px;
+}
+.product-name{
+    color: rgb(10, 10, 10);
+    font-size: 17px;
+    font-weight: bold;
+}
+.pro-name{
+    width: 100%;
+    height: 24%;
+}
+
+.product-price{
+    color: rgb(214, 13, 43);
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.product-price del{
+    color:rgb(10, 10, 10)
+}
+.buy{
+	background-color: rgb(240, 109, 124);
+	color: #FFF;
+	border: none;
+	width: 150px;
+	height: 40px;
+	line-height: 30px;
+	cursor: pointer;
+    font-size: 18px;
+}
+#main-bottom{
+    width: 95%;
+    height: 80px;
+    margin: 20px auto;
+    display: flex;
+}
+.main-bottom-sub{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    margin-left: 40px;
+}
+.main-bottom-sub img{
+    width: 20%;
+    height: 60%;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.info-service{
+    width: 80%;
+    height: 60%;
+}
+.main-bottom-sub h3{
+    font-size: 15px;
+    color: #000;
+    margin: 10px auto;
+} 
+#footer-product{
+    width: 100%;
+    height: 520px;
+    margin: 20px auto;
+    background-color: #f8dfdf;
+}
+#footer-sub{
+    width: 85%;
+    height: 170px;
+    display: flex;
+    margin: 0px auto;
+}
+.footer-sub-inf{
+    width: 40%;
+}
+.footer-sub-inf img{
+    width: 70%;
+    height: 120px;
+    margin: 7px 0px;
+}
+.footer-sub-inf b{
+    font-size: 18px;
+    margin: 0px 22px;
+    line-height: 27px;
+}
+.footer-sub-info{
+    width: 25%;
+    margin: 10px 20px 20px 70px;
+    line-height: 25px;
+}
+.footer-sub-info h2{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 0px;
+}
+.footer-sub-info ul{
+    padding-left: 18px;
+    margin-top: 7px;
+}
+.footer-sub-info a{
+    text-decoration: none;
+    color: #000;
+}
+.footer-sub-info a:hover{
+    color:rgb(240, 109, 124)
+}
+#ip {
+    display: none;
+}
+#footer-map{
+    width: 90%;
+    height: 300px;
+    margin: 5px auto;
+}
+#footer-map h2{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+    padding-right: 30px;
+    float: right;
+}
+#footer-map iframe{
+    width: 100%;
+    height: 100%;
+}
